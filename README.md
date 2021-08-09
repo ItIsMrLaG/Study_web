@@ -4,6 +4,9 @@ Commands:
 > "django-admin startproject NAME_OF_YOUR_PROJECT" - starting new project 
 > "python manage.py runserver" - starting web testing  
 > "python manage.py startapp NAME_OF_THE_APP" - creating new app  
+> "python manage.py makemigrations" - creating migraation for bd  
+> "python manage.py migrate" - making migration  
+> "python manage.py createsuperuser" - creating a admin account
 ---
 Organization:
 > "all .html should be in directory with name 'templates' + (developers recommends put all this html in a directory with same name as this app (django knows that 

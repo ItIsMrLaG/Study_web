@@ -7,6 +7,7 @@
         <h1>about.html</h1>
         <p>main_page_gingir</p>
         <button class="btn btn-danger">Just-just a button</button>
+
         {% for el in values %}
             {% if el == 'Mr.LaG' %}
                 {% filter upper %}
@@ -14,6 +15,7 @@
                 {% endfilter %}
             {% endif %}
         {% endfor %}
+
         <p>{{ objects.number | upper }}</p>
     </div>
 {% endblock %}

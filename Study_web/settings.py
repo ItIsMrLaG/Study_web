@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'news',
 ]
 
 # >>>промежуточное ПО (плагины), которое обеспечивают что-то (безопасность,)<<<
