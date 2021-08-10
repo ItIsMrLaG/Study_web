@@ -22,7 +22,7 @@ this html in a directory with same name as this app)"
 ---
 ## Work with BD  
 1. Create table class in "YOUR_APP/models.py" (this class should be inherited from class models.Model)  
-2. Create "__str__" func with return - self.title  
+2. Create "__str__" func with return - self.title (for pretty output)  
 3. Then do in terminal "python manage.py makemigrations"  
 4. Then do in terminal "python manage.py migrate"  
 5. Then you need to log in to your site on the page "YOUR_SITE/admin"  

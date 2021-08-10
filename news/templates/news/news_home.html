@@ -1,3 +1,4 @@
+
 {% extends 'main/html_layout.html' %}
 
 {% block title %}NEEEEWS{% endblock %}
@@ -5,6 +6,12 @@
 {% block content %}
     <div class="features">
         <h1>news are here</h1>
+        {% for el in news %}
+            <div class="new-news" >
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.full_text}}</p>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}
 
