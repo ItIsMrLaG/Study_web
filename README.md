@@ -14,6 +14,12 @@ all .html leaves in "template" because of that you should write path to file fro
 * "all static sources (css, images, js-scripts) should be in directory with name 'static' (developers recommends put all 
 this html in a directory with same name as this app)"  
 ---
+## Starting new App
+1. Do in terminal "python manage.py startapp NAME_OF_THE_APP"  
+2. Log your app in "settings.py"  
+3. Link page on your site with this app in "urls.py"  
+4. Then link function from file "YOUR_APP/views.py" with your site-page of this app in "YOUR_APP/urls.py"  
+---
 ## Work with BD  
 1. Create table class in "YOUR_APP/models.py" (this class should be inherited from class models.Model)  
 2. Create "__str__" func with return - self.title  
