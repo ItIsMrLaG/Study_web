@@ -26,8 +26,8 @@ this html in a directory with same name as this app)"
 3. Then do in terminal "python manage.py makemigrations"  
 4. Then do in terminal "python manage.py migrate"  
 5. Then you need to log in to your site on the page "YOUR_SITE/admin"  
-  * if you don't have an account  
-  1. Do in terminal "python manage.py createsuperuser"  
-  2. Imagine and mind your login and password (as 'admin' and 'geg')  
+  >* if you don't have an account  
+  >1. Do in terminal "python manage.py createsuperuser"  
+  >2. Imagine and mind your login and password (as 'admin' and 'geg')  
 6. Register your table in file 'YOUR_APP/admin'  
 7. For changing name of table in DB add new class 'Meta' inside the class of your table  
