@@ -22,7 +22,6 @@ this html in a directory with same name as this app)"
 4. Then link function from file "YOUR_APP/views.py" with your site-page of this app in "YOUR_APP/urls.py"  
 ---  
 ## Work with BD  
----  
 ### Creating model  
 1. Create table class in "YOUR_APP/models.py" (this class should be inherited from class models.Model)  
 2. Create "__str__" func with return - self.title (for pretty output)  
