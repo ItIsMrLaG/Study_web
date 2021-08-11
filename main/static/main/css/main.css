@@ -70,6 +70,24 @@ aside ul li:hover, aside ul a:hover {
     text-align: center;
 }
 
+.btn-info{
+    float: left;
+    width: 120px;
+    margin-left: -30px;
+    transition: transform 0.3s ease;
+}
+
+.btn-info:hover {
+    transform: scale(1.05);
+}
+
+form {
+    margin-left: 21%;
+    width: 500px;
+    margin-top: 80px;
+}
+
+
 meanings = {
 color - цвет текста
 background - цвет фона

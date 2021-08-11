@@ -2,7 +2,7 @@ from django.db import models
 ## file for creating pre-table
 
 class Information(models.Model):
-    title = models.CharField('Name', max_length=5, default='None')  ## what would be, if field is empty
+    title = models.CharField('Name', max_length=5)  ## what would be, if field is empty ""default='None'"" (as the exemple)
     intro = models.CharField('Anons', max_length=250)  ## field - for small volume of texts (less then 250 signs)
     full_text = models.TextField('Article')  ## field - for huge volume of texts
     date = models.DateTimeField('Date')  ## field - for date
