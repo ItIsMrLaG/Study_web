@@ -7,4 +7,6 @@ urlpatterns = [
     path('create/', views.create, name='create'),
     path('<int:pk>', views.Detail_output.as_view(), name='news_detail'),  # <int:pk> - it is dynamical url (means - a parameter is supplied to it, which must be an int)
     path('checker', views.All_output.as_view(), name='check'),
+    path('<int:pk>/update', views.News_update.as_view(), name='update'),
+    path('<int:pk>/delete', views.News_delete.as_view(), name='delete'),
 ]

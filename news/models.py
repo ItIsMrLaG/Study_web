@@ -11,6 +11,9 @@ class Information(models.Model):
         """i don't know for what"""
         return self.title
 
+    def get_absolute_url(self):
+        return f'/news/{self.id}'
+
     class Meta:
         """class for meta params (and name changing)"""
         verbose_name = 'Information'
