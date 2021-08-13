@@ -1,0 +1,15 @@
+{% extends 'main/html_layout.html' %}
+
+{% block title %}all_artic{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ all_art }}</h1>
+         {% for el in all_art %}
+        <div class="new-news" >
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.intro}}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

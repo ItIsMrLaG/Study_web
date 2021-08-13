@@ -12,19 +12,19 @@ class Informatin_form(ModelForm):  # name of this class - "YOUR_MODEL_form" or t
 
         widgets = {
             'title': TextInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Name of the info',
-            }),
+                                    'class': 'form-control',
+                                    'placeholder': 'Name of the info',
+                                    }),
             'intro': TextInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Anons',
-            }),
+                                    'class': 'form-control',
+                                    'placeholder': 'Anons',
+                                    }),
             'full_text': Textarea(attrs={
-                'class': 'form-control',
-                'placeholder': 'Main text',
-            }),
+                                    'class': 'form-control',
+                                    'placeholder': 'Main text',
+                                    }),
             'date': DateTimeInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Date',
-            }),
+                                    'class': 'form-control',
+                                    'placeholder': 'Date',
+                                    }),
         }   # creating form for taking info (it will be converted to html code + functional)
