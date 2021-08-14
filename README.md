@@ -42,3 +42,23 @@ this html in a directory with same name as this app)"
 4. create file "YOUR_APP/forms.py"  
 5. put your form in to the html  
 6. send form to the bd  
+---  
+## Registration/login/logout  
+### Registration  
+1. pip install django-crispy-form  (app for pretty forms)
+2. add 'crispy_forms' into 'settings.py' in 'INSTALLED_APP'
+3. delete first point from 'settings.py' from 'AUTH_PASSWORD_VALIDATORS'  
+4. add "CRISPY_TEMPLATE_PACK = 'bootstrap4'" into file 'settings.py'
+5. create html-template (registration.html) where "info|crispy" - your form + crispy-filter 
+> also add in the beginning of registration.html - '{% load crispy_forms_tags %}'
+6. add new form in file 'YOUR_APP/forms.py'  
+7. create def in file 'YOUR_APP/views.py'  and add path to this def  
+8. add  in file 'settings.py' - "LOGIN_REDIRECT_URL = 'YOUR_URL'"  
+---  
+### Log in  
+1. use method 'views.LoginView.as_view(template_name='YOUR.html')' from "django.contrib.auth"  
+---  
+### Log out  
+1. use method 'views.LogoutView.as_view(template_name='YOUR.html')' from "django.contrib.auth"  
+> to check now user inside .html you should write - "{{ user.username }}"  
+---

@@ -1,6 +1,9 @@
 from django.shortcuts import render
 # Create your views here.
 
+def info (request):
+    return render(request, 'main/info.html')
+
 def index(request):
     info = {
         'title': "index.html(переданные изнаутри параметры)",

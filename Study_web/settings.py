@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'news',
+    'register',
+    'crispy_forms'
 ]
 
 # >>>промежуточное ПО (плагины), которое обеспечивают что-то (безопасность,)<<<
@@ -96,9 +98,6 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
@@ -137,3 +136,7 @@ STATICFILES_DIR = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = '/'  #  path where user whould go before registration

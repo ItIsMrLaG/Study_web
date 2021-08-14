@@ -67,6 +67,7 @@ aside ul li:hover, aside ul a:hover {
     clear: both;
     width: 400px;
     margin: 20px 26%;
+    margin-left: +440px;
     text-align: center;
 }
 
@@ -82,11 +83,10 @@ aside ul li:hover, aside ul a:hover {
 }
 
 form {
-    margin-left: 21%;
+    margin-left: 30%;
     width: 500px;
     margin-top: 80px;
 }
-
 
 meanings = {
 color - цвет текста

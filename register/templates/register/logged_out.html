@@ -1,0 +1,13 @@
+
+{% extends 'main/html_layout.html' %}
+
+{% block title %}INDEX{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="features">
+        <p>You are logged out!</p>
+        <a  href="{% url 'register' %}" class="btn btn-danger">Log in again</a>
+    </div>
+{% endblock %}
