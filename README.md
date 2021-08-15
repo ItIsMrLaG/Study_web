@@ -61,4 +61,22 @@ this html in a directory with same name as this app)"
 ### Log out  
 1. use method 'views.LogoutView.as_view(template_name='YOUR.html')' from "django.contrib.auth"  
 > to check now user inside .html you should write - "{{ user.username }}"  
+---  
+## Connecting djang with MySQL  
+1. add new config in your 'settings.py' in 'DATABASES'  
+> DATABASES = {  
+>    'default': {  
+>        'ENGINE': 'django.db.backends.mysql',  
+>        'NAME': 'boosteam',  
+>        'USER': 'root',  
+>        'PASSWORD': '',  
+>        'HOST': 'localhost',  
+>        'PORT': '3306',  
+>    }  
+>}  
+2. then try "pip install mysqlclient"  
+> 1. if after this operation you have really huge and awful red 'error' you should install 'mysqlclient' manually  
+> from https://pypi.org/project/mysqlclient/#files install file for your python version and then write in terminal - "pip install NAME_OF_THIS_FILE_WITH_PATH"  
+> 2. if privious was useless for you and you have error - '.whl is not a supported wheel on this platform' take your 'mysqlclient.whl' from this site - 'https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient' (video - 'https://www.youtube.com/watch?v=8gSjvehTqAk')  
+3. then write command 'makemigrations' and 'migrate'  
 ---
