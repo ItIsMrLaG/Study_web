@@ -84,5 +84,5 @@ this html in a directory with same name as this app)"
 * [Documentation](https://firebase.google.com/docs/firestore/quickstart#python_1)  
 1. Create your 'Firestore Database'  
 2. go to your "Project settings" > "Service account" and take SDK.json  
-3. use this file in your config (like in firebase.py)  
+3. use this file in your config (like in firebase_cloud.py)  
 ---  
