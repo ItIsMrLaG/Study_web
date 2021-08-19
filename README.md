@@ -77,7 +77,7 @@ this html in a directory with same name as this app)"
 2. then try "pip install mysqlclient"  
 > 1. if after this operation you have really huge and awful red 'error' you should install 'mysqlclient' manually  
 > from [site](https://pypi.org/project/mysqlclient/#files) install file for your python version and then write in terminal - "pip install NAME_OF_THIS_FILE_WITH_PATH"  
-> 2. if privious was useless for you and you have error - '.whl is not a supported wheel on this platform' take your [mysqlclient.whl]('https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient) [video]('https://www.youtube.com/watch?v=8gSjvehTqAk')
+> 2. if privious was useless for you and you have error - '.whl is not a supported wheel on this platform' take your mysqlclient.whl - 'https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient, video - 'https://www.youtube.com/watch?v=8gSjvehTqAk'
 3. then write command 'makemigrations' and 'migrate'  
 ---
 ## Connecting python with firebase Cloud  
