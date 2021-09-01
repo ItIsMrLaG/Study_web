@@ -86,3 +86,43 @@ this html in a directory with same name as this app)"
 2. go to your "Project settings" > "Service account" and take SDK.json  
 3. use this file in your config (like in firebase_cloud.py)  
 ---  
+## Work with JS  
+* JS.files are loaded anew (with the original parameters) every time the page is loaded (like html/css)  
+* JS.files should be in YOUR_APP/static/YOUR_APP/js/YOUR_FILE.js  
+* you can plug your JS.files to all HTML.templates (from all app)  
+### Sending GET-request from JS to django  
+1. plug to the HTML head jquery_library:  
+> '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>'  
+2. then plug to the HTML head your JS.file:  
+>  '<script type="text/javascript" src="{% static 'YOUR_APP/main.js' %}"></script>'  
+3. create in the JS.file function for getting and handling response with information  
+  * this function should have one parameter for information from response  
+4. link this function with jquery.method:  
+>  '$.getJSON("REQUEST_NAME", JS_FUNCTION);'  
+  * without '()'  
+5. create in YOUR_APP/urls.py ligament for handler of the path with 'REQUEST_NAME':  
+>  'path('REQUEST_NAME', views.handler, name='config'),'  
+6. in views "import json" and "from django.http import HttpResponse"  
+7. in views.handler(request) return:  
+>  'return HttpResponse(json.dumps(YOUR_DICT), content_type='REQUEST_NAME')'  
+  * YOUR_DICT would be converted in json format  
+---  
+### Dynamic output of the code with JS  
+* since HTML changes only on page reload, to make dynamic changes you need to use JS  
+* ginger changes with HTML  
+* all examples in 'js_work' app  
+1. link HTML.element with JS.function  
+  * for sending value-params to the JS.function:  
+>  'on...="Func(this.value)'  
+2. add special class to this element ('ELEMENT_CLASS')  
+3. write JS.function-handler  
+4. for changing some info in HTML inside this function:  
+>  '$('.ELEMENT_CLASS').html(just a string);'  
+  * the string can be whole html code  
+---  
+### Sending params from JS to Django  
+1. create function like in previous paragraph  
+2. write in this function:  
+>  'fetch(string-with_params).then(function(response) {body of the func})'  
+  * string_with_params = '?value='+ value + '&id=' + 1  (example)  
+---  
