@@ -77,12 +77,12 @@ this html in a directory with same name as this app)"
 2. then try "pip install mysqlclient"  
 > 1. if after this operation you have really huge and awful red 'error' you should install 'mysqlclient' manually  
 > from [site](https://pypi.org/project/mysqlclient/#files) install file for your python version and then write in terminal - "pip install NAME_OF_THIS_FILE_WITH_PATH"  
-> 2. if privious was useless for you and you have error - '.whl is not a supported wheel on this platform' take your ['mysqlclient.whl']('https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient) ([video]('https://www.youtube.com/watch?v=8gSjvehTqAk'))  
+> 2. if privious was useless for you and you have error - '.whl is not a supported wheel on this platform' take your mysqlclient.whl - 'https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient, video - 'https://www.youtube.com/watch?v=8gSjvehTqAk'
 3. then write command 'makemigrations' and 'migrate'  
 ---
 ## Connecting python with firebase Cloud  
 * [Documentation](https://firebase.google.com/docs/firestore/quickstart#python_1)  
 1. Create your 'Firestore Database'  
 2. go to your "Project settings" > "Service account" and take SDK.json  
-3. use this file in your config (like in firebase.py)  
+3. use this file in your config (like in firebase_cloud.py)  
 ---  
