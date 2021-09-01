@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'main',
     'news',
     'register',
-    'crispy_forms'
+    'crispy_forms',
+    'js_work',
 ]
 
 # >>>промежуточное ПО (плагины), которое обеспечивают что-то (безопасность,)<<<

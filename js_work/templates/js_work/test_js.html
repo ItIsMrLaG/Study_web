@@ -1,0 +1,38 @@
+{% extends 'main/html_layout.html' %}
+
+{% block title %}JS{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>HOW TO WORK WITH JS</h1>
+
+        <select class="custom-select" id="inputGroupSelect02" onchange="SelectFunc(this.value)">
+            <option selected>Element - select</option>
+            <option value="value - 1">First choose</option>
+            <option value="value - 2">Second choose</option>
+            <option value="value - 3">Three</option>
+          </select>
+        <h3 class="select_info"># None #</h3>
+
+        <input type="range" class="form-control-range" id="formControlRange" value='{{ info }}' min="1" max="20" step="1" onchange="RangeFunc(this.value)">
+        <h3 class="range_info"># None #</h3><br>
+
+        <div>
+            <input type="radio" onclick="RadioFunc(this.value)"
+                   name="contact" value="value - 1">
+            <label for="contactChoice1">First</label>
+            <input type="radio" onclick="RadioFunc(this.value)"
+                   name="contact" value="value - 2">
+            <label for="contactChoice2">Second</label>
+            <input type="radio" onclick="RadioFunc(this.value)"
+                   name="contact" value="value - 3">
+            <label for="contactChoice3">Third</label>
+        </div>
+        <h3 class="radio_info"># None #</h3><br>
+
+        <h4># JSON from server #</h4>
+        <div class="jason"></div><br>
+
+    </div>
+{% endblock %}
