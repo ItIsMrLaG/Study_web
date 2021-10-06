@@ -89,6 +89,16 @@ this html in a directory with same name as this app)"
    > information = db.collection('collection-name').get().to_dict()  
    * for take information from document from collection:  
    > information = db.collection('collection-name').document('doc-name').get().to_dict()  
+   * for rewriting information:  
+   > doc_ref = db.collection('userdata').document('just_check')  
+     doc_ref.set({  
+    ...  
+    })  
+   * for adding information:  
+   > doc_ref = db.collection('userdata').document('just_check')  
+     doc_ref.update({  
+    ...  
+    })  
 ---  
 ## Work with JS  
 * JS.files are loaded anew (with the original parameters) every time the page is loaded (like html/css)  
